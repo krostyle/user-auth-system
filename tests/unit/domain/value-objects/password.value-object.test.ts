@@ -1,5 +1,5 @@
 import { Password } from '../../../../src/domain/value-objects/password.value-object';
-import { InvalidPasswordException } from '../../../../src/domain/exceptions/InvalidPasswordException.exception';
+import { InvalidPasswordException } from '../../../../src/domain/exceptions/InvalidPasswordException';
 describe('Password value objects', () => {
   test('should create a valid password', () => {
     const validPassword = 'validPassword123-';

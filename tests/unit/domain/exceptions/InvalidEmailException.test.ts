@@ -1,4 +1,4 @@
-import { InvalidEmailException } from '../../../../src/domain/exceptions/invalidEmailException.exception';
+import { InvalidEmailException } from '../../../../src/domain/exceptions/InvalidEmailException';
 import { Email } from '../../../../src/domain/value-objects/email/email.value-object';
 
 describe('Invalid Email exceptions', () => {

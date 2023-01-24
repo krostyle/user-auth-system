@@ -1,4 +1,4 @@
-import { InvalidPasswordException } from '../../../../src/domain/exceptions/InvalidPasswordException.exception';
+import { InvalidPasswordException } from '../../../../src/domain/exceptions/InvalidPasswordException';
 import { Password } from '../../../../src/domain/value-objects/password.value-object';
 
 describe('Invalid Password exceptions', () => {

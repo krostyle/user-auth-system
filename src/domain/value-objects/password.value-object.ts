@@ -1,4 +1,4 @@
-import { InvalidPasswordException } from '../exceptions/InvalidPasswordException.exception';
+import { InvalidPasswordException } from '../exceptions/InvalidPasswordException';
 
 export class Password {
   private readonly _password: string;
