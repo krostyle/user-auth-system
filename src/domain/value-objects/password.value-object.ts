@@ -1,3 +1,5 @@
+import { InvalidPasswordException } from '../exceptions/InvalidPasswordException.exception';
+
 export class Password {
   private readonly _password: string;
   constructor(password: string) {
@@ -7,15 +9,21 @@ export class Password {
 
   private validate(password: string) {
     if (password.length < 8) {
-      throw new Error('Password must be at least 8 characters long');
+      throw new InvalidPasswordException(
+        'Password must be at least 8 characters long',
+      );
     }
 
     if (!password.match(/[!@#$%^&*(),.?":{}|<>-]/)) {
-      throw new Error('Password must contain at least one special character');
+      throw new InvalidPasswordException(
+        'Password must contain at least one special character',
+      );
     }
 
     if (!password.match(/\d/)) {
-      throw new Error('Password must contain at least one number');
+      throw new InvalidPasswordException(
+        'Password must contain at least one number',
+      );
     }
   }
 
