@@ -26,13 +26,10 @@ describe('Password value objects', () => {
       'Password must contain at least one number',
     );
   });
-
-  // it('should be able to compare passwords', () => {
-  //   const password = 'Password1!';
-  //   const samePassword = 'Password1!';
-  //   const differentPassword = 'password';
-  //   const passwordValueObject = new Password(password);
-  //   expect(passwordValueObject.compare(samePassword)).toBeTruthy();
-  //   expect(passwordValueObject.compare(differentPassword)).toBeFalsy();
-  // });
+  //get value
+  it('should return the password value', () => {
+    const validPassword = 'validPassword123-';
+    const password = new Password(validPassword);
+    expect(password.getValue()).toBe(validPassword);
+  });
 });

@@ -1,10 +1,8 @@
 export class Password {
   private readonly _password: string;
-  private _hash: string;
   constructor(password: string) {
     this.validate(password);
     this._password = password;
-    // this._hash = this.hash();
   }
 
   private validate(password: string) {
@@ -21,11 +19,7 @@ export class Password {
     }
   }
 
-  //   private hash() {
-  //     return password;
-  //   }
-
-  public compare(password: string): boolean {
-    return true;
+  public getValue(): string {
+    return this._password;
   }
 }
