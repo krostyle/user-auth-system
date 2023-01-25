@@ -1,4 +1,4 @@
-import { PermissionException } from '../exceptions/PermissionNameCannotBeEmptyException';
+import { PermissionException } from '../exceptions/PermissionException';
 export class Permission {
   private name: string;
   private description: string;

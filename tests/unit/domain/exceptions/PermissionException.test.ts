@@ -1,5 +1,5 @@
 import { Permission } from '../../../../src/domain/entities/permission.entity';
-import { PermissionException } from '../../../../src/domain/exceptions/PermissionNameCannotBeEmptyException';
+import { PermissionException } from '../../../../src/domain/exceptions/PermissionException';
 
 describe('Permission name can not be empty exception', () => {
   test('should throw PermissionException when name is empty', () => {
